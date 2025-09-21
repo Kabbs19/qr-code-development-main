@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+/* Fonts */
+--font-body: "Outfit", sans-serif;
+--font-heading: "Outfit", sans-serif;
+
+/* Colours */
+--slate-900: #1F314F;
+--slate-500: #68778D;
+--slate-300: #D5E1EF;
+--white: #FFFFFF;
+
+}
+
+/* Font Styles */
+.font-bold {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+.font-regular {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
