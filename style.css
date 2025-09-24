@@ -13,6 +13,16 @@
 --slate-300: #D5E1EF;
 --white: #FFFFFF;
 
+/* Shadows */
+--shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+--shadow-md: 0 4px 6px rgba(0,0,0,0.16);
+--shadow-lg: 0 10px 20px rgba(0,0,0,0.19);
+
+/* Radius */
+--radius-sm: 4px;
+--radius-md: 8px;
+--radius-lg: 16px;
+
 }
 
 /* Font Styles */
@@ -28,4 +38,83 @@
     font-size: 15px;
     line-height: 140%;
     letter-spacing: 0.2px;
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+/* Spacings */
+
+.ma-sm {
+    margin: 16px;
+}
+
+.ma-md {
+    margin: 24px;
+}
+
+.ma-lg {
+    margin: 40px;
+}
+
+.ma-xxl {
+    margin: 200px;
+}
+
+.mt-sm {
+    margin-top: 16px;
+}
+
+.pa-sm {
+    padding: 16px;
+}
+
+.pa-xxl {
+    padding: 200px;
+}
+
+.border-md {
+    border-radius: var(--radius-md);
+}
+
+.border-lg {
+    border-radius: var(--radius-lg);
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.5;
+    color: var(--slate-900);
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4 ,h5 {
+    font-family: var(--font-heading);
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    max-width: 320px;
+    margin: 200px auto;
+    background-color: var(--white);
+
+}
+
+.qr-code img {
+  width: 100%;
+  max-width: 260px; /* keeps QR code from being too big */
+  border-radius: 12px; /* matches container rounding */
+  display: block;
+  margin: 0 auto;
 }
